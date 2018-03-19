@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @takoyaki.price %>
+</p>
+
+<p>
+  <strong>Quantity oct:</strong>
+  <%= @takoyaki.quantity_oct %>
+</p>
+
+<%= link_to 'Edit', edit_takoyaki_path(@takoyaki) %> |
+<%= link_to 'Back', takoyakis_path %>

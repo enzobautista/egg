@@ -1,0 +1,27 @@
+<%= form_with(model: takoyaki, local: true) do |form| %>
+  <% if takoyaki.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(takoyaki.errors.count, "error") %> prohibited this takoyaki from being saved:</h2>
+
+      <ul>
+      <% takoyaki.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, id: :takoyaki_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity_oct %>
+    <%= form.number_field :quantity_oct, id: :takoyaki_quantity_oct %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

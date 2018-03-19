@@ -1,0 +1,2 @@
+module TakoyakisHelper
+end

@@ -1,0 +1,2 @@
+class Takoyaki < ApplicationRecord
+end
